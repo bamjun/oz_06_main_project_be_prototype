@@ -1,3 +1,47 @@
+# 프로젝트 테스트
+- 레포지토리 복사하기
+```
+git clone https://github.com/bamjun/oz_06_main_project_be_prototype.git
+```
+
+- 폴더 이동
+```
+cd oz_06_main_project_be_prototype
+```
+
+- 포이트리 가상환경 설치
+```
+poetry install
+```
+
+- 가상환경 실행
+```
+poetry shell
+```
+
+- 장고 폴더로 이동
+```
+cd django
+```
+
+- 장고 마이그레이션
+```
+poetry run python manage.py makemigrations --settings=a_core.settings.development
+poetry run python manage.py migrate --settings=a_core.settings.development
+```
+
+- 프로젝트 실행
+```
+poetry run python manage.py runserver --settings=a_core.settings.development
+```
+
+- 브라우저에서 스웨거 실행
+```
+http://127.0.0.1:8000/api/docs
+```
+
+---
+---
 ### 1. 프로젝트 개요
 이 프로젝트는 Django 기반의 백엔드 API 서버로, Poetry를 사용한 의존성 관리와 Docker를 통한 컨테이너화를 구현하고 있습니다.
 
