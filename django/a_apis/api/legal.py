@@ -1,6 +1,7 @@
 from ninja import Router
 
 from django.shortcuts import render
+
 router = Router()
 
 
